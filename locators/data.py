@@ -20,12 +20,11 @@ class AuthData():
         "password": "sdfsdfsdf"
     }
 
-    my_access_token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OGNlNjc2OWVkMjgwMDAxYjY2YTI0ZCIsImlhdCI6MTc1NDA2NTIxOCwiZXhwIjoxNzU0MDY2NDE4fQ.naoHvNIsPwz-WpWgnao96UzHUW4OJj84FQsWJQ0GZXA'
-    my_refresh_token = '30cf0a53f67feec32225b9c4b17c13d3c597f617efac9c1de941a162310ef664a7b619e7ee16ba1c'
-    headers = {
-    "Content-Type": "application/json",
-    "Authorization": my_refresh_token
-    }
+    no_vlid_my_login = {
+        "email": "leo5642@tets.ru123",
+        "password": "sdfsdfsdf123"
+        }
+
 
     my_order = {
         "ingredients": ["61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa6f"]

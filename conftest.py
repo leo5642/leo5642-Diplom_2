@@ -23,7 +23,7 @@ def login_gen():
         "name": name
     }
 
-    yield payload
+    return payload
 
 @pytest.fixture(scope="class")
 def token(login_gen):

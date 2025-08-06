@@ -19,10 +19,7 @@ class TestPostCourier2():
         
     @allure.title('вход с неверным логином и паролем')
     def test_no_valid_email_and_password(self):
-        payload = {
-        "email": "leo5642@tets.ru123",
-        "password": "sdfsdfsdf123"
-        }
+        payload = AuthData.no_vlid_my_login.copy()
 
         with allure.step('Отправка запроса с неверным логином и паролем'):
             r = requests.post(UrlCollector.url_login, data=payload)
