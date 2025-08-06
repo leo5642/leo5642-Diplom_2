@@ -15,7 +15,7 @@ class TestPostCourier2():
         assert r.status_code == 200
         payload.pop("password")
         r = r.json()
-        assert r["success"] == True
+        assert 'Bearer' in r["accessToken"]
         
     @allure.title('вход с неверным логином и паролем')
     def test_no_valid_email_and_password(self):

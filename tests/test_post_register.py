@@ -15,7 +15,7 @@ class TestPostCourier1():
         assert r.status_code == 200
         payload.pop("password")
         r = r.json()
-        assert r["success"] == True
+        assert 'Bearer' in r["accessToken"]
     
     @allure.title('создание пользователя, который уже зарегистрирован;')
     def test_no_register_dubpl(self, login_gen):
